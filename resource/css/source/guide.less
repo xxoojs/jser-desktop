@@ -1,0 +1,108 @@
+.guide{
+    position: absolute;
+    width: 800px;
+    height: 476px;
+    left: calc(50% - 400px);
+    top: calc(50% - 200px);
+    box-shadow: 0px 0px 100px #999;
+    background: #fff;
+    // animation:guide-in 2s linear 0s;
+
+    .closeBtn {
+        width: 41px;
+        height: 41px;
+        background: url(../images/closeBtn.png) no-repeat;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        transition: .5s;
+        cursor: pointer;
+        z-index: 5;
+    }
+
+    .closeBtn:hover{
+        transform: rotateZ(360deg);
+    }
+
+    .content{
+        width: 700px;
+        height: 360px;
+        margin: 20px auto;
+        background: url('../images/step1.png')
+    }
+
+    .bar{
+        height: 76px;
+
+        ul{
+            height: 40px;
+            line-height: 40px;
+            margin: 40px 0 0;
+            text-align: center;
+
+            li{
+                list-style: none;
+                border: 1px solid #e15671;
+                width: 16px;
+                height: 16px;
+                display: inline-block;
+                border-radius: 50%;
+                margin: 0 10px;
+            }
+
+            li.active{
+                background: #e15671;
+                box-shadow: 0 0 0 3px #f0c8d0
+            }
+        }
+    }
+
+    .btns{
+        position: absolute;
+        right: 10px;
+        bottom: 18px;
+
+        button{
+            appearance: none;
+            padding: 0 16px;
+            background: #e15671;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 14px;
+            height: 40px;
+        }
+
+        .previous,.done{
+            display: none;
+        }
+    }
+}
+.guide-bg{
+    position: absolute;
+    width: 800px;
+    height: 476px;
+    left: calc(50% - 400px);
+    top: calc(50% - 200px);
+    box-shadow: 0px 0px 100px #999;
+    background: url('../images/guidebg.jpeg') no-repeat;
+    transform: rotateZ(10deg);
+    position: absolute;
+    z-index: -1;
+    background-size: contain;
+}
+
+.guide-animation{
+    animation: guide-in .2s linear 0s;
+}
+
+@keyframes guide-in{
+    0%{
+        transform: scale(1.1);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}

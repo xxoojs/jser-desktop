@@ -1,0 +1,101 @@
+.light_wp {
+    position: absolute;
+    width: 1000px;
+    height: 460px;
+    top: 10%;
+    left: 15%;
+    margin-top: -230px;
+    z-index: -1;
+    transform: rotateZ(-20deg);
+    opacity: .6;
+    animation: light-effect 10s both linear infinite;
+
+    .light_box {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: scale(.4);
+    
+        .light_1 {
+            position: absolute;
+            bottom: 50%;
+            left: 0;
+            width: 476px;
+            height: 72px;
+            margin-bottom: -18px;
+            background: url(../images/light_2.png);
+        }
+
+        .light_2, .light_3, .light_4 {
+            position: absolute;
+            width: 476px;
+            height: 72px;
+            background: url(../images/light_1.png);
+        }
+
+        .light_2 {
+            top: 0;
+            left: 350px;
+            transform: scale(1.5);
+        }
+
+        .light_3 {
+            bottom: 0;
+            left: 190px;
+            transform: scale(1);
+        }
+
+        .light_4 {
+            top: 50%;
+            margin-top: -18px;
+            right: 0;
+            transform: scale(1);
+        }
+
+        .light_5 {
+            position: absolute;
+            width: 1920px;
+            height: 1080px;
+            bottom: 50%;
+            margin-bottom: -523px;
+            left: -923px;
+            background: url(../images/light_3.png);
+            transform: scale(.5);
+            -webkit-animation: light5_effect 10s both linear infinite;
+        }
+    }
+}
+
+@keyframes light-effect {
+    0% {
+        transform:translate(2000px,-728px) rotateZ(-20deg);
+    }
+    10% {
+        transform:translate(0,0) rotateZ(-20deg);
+    }
+    50% {
+        transform:translate(-80px, 29.12px) rotateZ(-20deg) scale(1.5);
+    }
+    100%,60%{
+        transform:translate(-2000px,728px) rotateZ(-20deg) scale(2);
+    }
+}
+
+@keyframes light5_effect {
+    0%,10% {
+        transform: translate(0,0);
+        opacity:0
+    }
+    16%,28% {
+        opacity:1
+    }
+    22%,34% {
+        opacity:0
+    }
+    100%,50% {
+        transform:translate(-50px,0);
+        opacity:0
+    }
+}

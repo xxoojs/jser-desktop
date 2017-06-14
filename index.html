@@ -1,0 +1,75 @@
+<head>
+	<title>呆魔徐</title>
+</head>
+
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="resource/css/app.min.css">
+<link rel="stylesheet" type="text/css" href="resource/lib/font-awesome/css/font-awesome.min.css">
+<script src="resource/lib/jquery-3.2.1.js"></script>
+
+<body ondragstart="return false;">
+	<section class="loading">
+		<section class="tip">loading</section>
+	</section>
+
+	<section class="topbar music_icon">
+		<div class="music_1"></div>
+		<div class="music_2"></div>
+		<div class="music_3"></div>
+		<span class="music_txt">music</span>
+	</section>
+
+	<section class="card">
+		<section class="disc">
+			<section id="icon" class="icon"></section>
+			<section id="shadow" class="shadow"></section>
+			<section id="axis" class="axis"></section>
+		</section>
+		<section class="center color_999">
+			<span class="song-name">WE ARE YOUNG</span>
+		</section>
+		<section class="center mt5">
+			<i class="fa mh5 fa-github fa-lg pointer"></i>
+				<i class="fa mh5 fa-qq fa-lg pointer"></i>
+				<!-- <i class="fa mh5 fa-renren fa-lg pointer"></i> -->
+				<i class="fa mh5 fa-weibo fa-lg pointer"></i>
+				<i class="fa mh5 fa-weixin fa-lg pointer"></i>
+				<i class="fa mh5 fa-envelope-open fa-lg pointer"></i>
+				<i class="fa mh5 fa-id-card fa-lg pointer"></i>
+				<i class="fa mh5 fa-phone fa-lg pointer"></i>
+		</section>
+	</section>
+
+	<footer class="footer">
+		© 2017 徐强 | 生活不止眼前的苟且，还有诗和远方的田野
+	</footer>
+
+	<div class="video-container">
+		<video id="main-video" data-id="main-video" data-src="resource/video/1500_bright_faid.webm" width="1920" height="1080" preload="auto" autoplay="" loop="" style="opacity: 1;">
+			<source src="resource/video/1500_bright_faid.webm" type="video/webm">
+		</video>
+	</div>
+	<div class="index-bg"></div>
+
+	<div id="audio" class="aplayer" style="display:none;"></div>
+
+	<div class="light_wp scale_box">
+		<span class="light_box">
+			<i class="light_1"></i>
+			<i class="light_2"></i>
+			<i class="light_3"></i>
+			<i class="light_5"></i>
+		</span>
+	</div>
+
+	<canvas id="myCanvas" width="100%" height="100%"></canvas>
+</body>
+<script src="resource/lib/APlayer.js"></script>
+<script src="resource/util/util.min.js"></script>
+<script src="resource/plugin/plugin.min.js"></script>
+<script src="resource/js/app.min.js"></script>
+<script src="resource/mock/mock.min.js"></script>
+<script src="resource/prototype/prototype.min.js"></script>
+<script src="resource/music/music.min.js"></script>
+<!-- <script src="resource/bubble/bubble.min.js"></script> -->
